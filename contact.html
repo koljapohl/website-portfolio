@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href='img/favicon.ico' type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.
+    1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <title>Contact Kolja Pohl</title>
+</head>
+<body>
+    <header class="page-header">
+        <!--place Logo here -->
+        <img src="img/logo.png" alt="logo" class="page-header__item">
+        <!--navigation bar-->
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" aria-hidden="true" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact-section">
+        <h1>Contact</h1>
+        <div class="contact__inner">
+            Kolja Pohl<br>
+            10719 Berlin<br>
+            Germany<br>
+            <br>
+            Mail: <a href="mailto:pohl.kolja@gmail.com" class="link__animated" aria-hidden="true">pohl.kolja (at) gmail (dot) com</a>
+        </div>
+        <!--Contact form-->
+        <form action="" method="post" id="contact-form">
+            <label class="standard-label" for="mail">E-mail: </label>
+            <input type="email" id="mail" required>
+
+            <label class="standard-label" for="telephone">Telephone: </label>
+            <input type="tel" id="telephone">
+
+            <label class="standard-label" for="msgbox">Message: </label>
+            <textarea maxlength="240" required id="msgbox"></textarea>
+
+            <input type="submit" value="Send message">
+        </form>
+    </div>
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <!--GitHub Icon-->
+            <a href="https://github.com/koljapohl" target="_blank" class="link__soc-med" rel="noopener">
+                <img src="img/github_icon.svg" alt="Icon of GitHub">
+            </a>
+            <!--Gitlab Icon-->
+            <a href="https://gitlab.com/koljapohl/" target="_blank" class="link__soc-med" rel="noopener">
+                <img src="img/gitlab_icon.svg" height="30px" width="30px" alt="Icon of GitLab">
+            </a>
+            <!--LinkedIn Icon-->
+            <a href="https://www.linkedin.com/in/kolja-pohl-b9027510b" target="_blank" class="link__soc-med" rel="noopener">
+                <img src="img/linkedin_icon.svg" height="30px" width="30px" alt="Icon of LinkedIn">
+            </a>
+        </div>
+    </footer>
+    <!--embed tota11y Plug-In-->
+    <script src="js/tota11y.min.js"></script>
+</body>
+</html>
