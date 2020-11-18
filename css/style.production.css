@@ -294,14 +294,21 @@
         height: auto;
         margin-right: 40px;
         border-radius: 50%;
+        -ms-grid-column-align: end;
+            justify-self: end;
     }
     .profile{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         max-width: 80%;
         margin: 2rem auto;
     }
     .berlin-illustration{
         display: flex;
         max-width: 110%;
+        margin: auto;
     }
     /*animations defined*/
     @-webkit-keyframes color-change{
@@ -377,9 +384,11 @@
     }
 
     .description{
-    max-width: 70%;
-    margin: 2rem auto;
-    text-align: center;
+        display: -ms-grid;
+        display: grid;
+        max-width: 70%;
+        margin: 2rem auto;
+        text-align: center;
     }
 
     .skills{
