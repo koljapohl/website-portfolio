@@ -269,14 +269,18 @@
         height: auto;
         margin-right: 40px;
         border-radius: 50%;
+        justify-self: end;
     }
     .profile{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         max-width: 80%;
         margin: 2rem auto;
     }
     .berlin-illustration{
         display: flex;
         max-width: 110%;
+        margin: auto;
     }
     /*animations defined*/
     @keyframes color-change{
@@ -320,9 +324,10 @@
     }
 
     .description{
-    max-width: 70%;
-    margin: 2rem auto;
-    text-align: center;
+        display: grid;
+        max-width: 70%;
+        margin: 2rem auto;
+        text-align: center;
     }
 
     .skills{
