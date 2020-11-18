@@ -43,7 +43,6 @@
      }
      blockquote:before, blockquote:after,
      q:before, q:after {
-     	content: '';
      	content: none;
      }
      table {
@@ -267,6 +266,10 @@
         max-width: 80%;
         margin: 2rem auto;
     }
+    .berlin-illustration{
+        display: flex;
+        max-width: 110%;
+    }
     /*animations defined*/
     @keyframes color-change{
         0%{
@@ -315,7 +318,7 @@
     }
 
     .skills{
-        margin: collapse 20px;
+        margin: 0px 20px;
         border-collapse: separate;
         border-spacing: 5px;
         text-align: left;
