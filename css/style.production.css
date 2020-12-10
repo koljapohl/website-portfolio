@@ -5,6 +5,13 @@
 * Browsers: > .5%,last 2 versions,Safari 13,not dead
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: > .5%,last 2 versions,Safari 13,not dead
+*/
+
     /*
     Colors used
 
@@ -304,6 +311,13 @@
         grid-template-columns: 1fr 1fr;
         max-width: 80%;
         margin: 2rem auto;
+    }
+    .required-input, .error-message {
+        font-size: 80%;
+        font-style: italic;
+    }
+    .required-input {
+        margin-top: 0.5rem;
     }
     .berlin-illustration{
         display: flex;

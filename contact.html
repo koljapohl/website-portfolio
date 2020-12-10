@@ -45,16 +45,23 @@
         </div>
         <!--Contact form-->
         <form action="'#'" method="post" id="contact-form">
-            <label class="standard-label" for="mail">E-mail: </label>
-            <input type="email" id="mail" required>
+            <div class='input-wrapper'>
+                <label class="standard-label" for="mail">E-mail: </label>
+                <input type="email" id="mail" required>
+            </div>
 
-            <label class="standard-label" for="telephone">Telephone: </label>
-            <input type="tel" id="telephone">
+            <div class='input-wrapper'>
+                <label class="standard-label" for="telephone">Telephone: </label>
+                <input type="tel" id="telephone">
+            </div>
 
-            <label class="standard-label" for="msgbox">Message: </label>
-            <textarea maxlength="240" required id="msgbox"></textarea>
+            <div class='input-wrapper'>
+                <label class="standard-label" for="msgbox">Message: *</label>
+                <textarea maxlength="240" required id="msgbox"></textarea>
+            </div>
 
             <input type="submit" value="Send message">
+            <p class='required-input'>*-fields are required</p>
         </form>
     </div>
     <footer class="page-footer">
@@ -74,6 +81,7 @@
             </a>
         </div>
     </footer>
+    <script src='js/script.js'></script>
     <!--embed tota11y Plug-In-->
     <script src="js/tota11y.min.js"></script>
 </body>
