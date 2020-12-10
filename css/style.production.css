@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v7.0.29,
 * Autoprefixer: v9.7.6
-* Browsers: > .5%,last 2 versions,Safari 13,not dead
+* Browsers: last 2 version
 */
 
     /*
@@ -50,6 +50,7 @@
      }
      blockquote:before, blockquote:after,
      q:before, q:after {
+     	content: '';
      	content: none;
      }
      table {
@@ -61,7 +62,8 @@
      /*setting native CSS variables*/
 
      *{
-         box-sizing: border-box;
+         -webkit-box-sizing: border-box;
+                 box-sizing: border-box;
      }
      header{
          font-size: 20px;
@@ -115,6 +117,9 @@
         padding: 10px;
         border-radius: 3px;
         border: 1px solid #702283;
+        -webkit-transition: 200ms ease-out background-color,
+        200ms ease-out color,
+        200ms ease-out opacity;
         transition: 200ms ease-out background-color,
         200ms ease-out color,
         200ms ease-out opacity;
@@ -129,6 +134,9 @@
         padding: 10px;
         border-radius: 3px;
         border: 1px solid #702283;
+        -webkit-transition: 200ms ease-out background-color,
+        200ms ease-out color,
+        200ms ease-out opacity;
         transition: 200ms ease-out background-color,
         200ms ease-out color,
         200ms ease-out opacity;
@@ -180,35 +188,42 @@
         margin: 15px;
     }
     .social-media{
-        flex: 0 1 20px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 20px;
+                flex: 0 1 20px;
     }
     .link__soc-med{
         text-decoration: none;
     }
     .page-header{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         max-width: 90%;
         margin: auto;
         padding: 20px;
         border-bottom: 1px solid #702283;
     }
-    .logo-container{
-        display: flex;
-    }
     .page-header__item{
-        flex: 0 1 100px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 1 100px;
+                flex: 0 1 100px;
     }
     .page-header__item:last-child{
-        flex-grow: 1;
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
         text-align: right;
-        -ms-grid-row-align: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
             align-self: center;
     }
-    .logo{
-        width: 100px;
+    img.page-header__item{
+        width: 10%;
         min-width: 50px;
         text-align: left;
-        flex-shrink: 2;
+        -ms-flex-negative: 2;
+            flex-shrink: 2;
         -o-object-fit: contain;
            object-fit: contain;
     }
@@ -217,7 +232,6 @@
     }
     .navigation-list li{
         display: inline-block;
-        margin: 10px;
         margin-left: 1.5rem;
         text-align: center;
     }
@@ -229,11 +243,7 @@
         padding: 10px;
         font-size: 16px;
     }
-@media all and (max-width: 300px){
-    .navigation-list__item{
-        padding: 0px;
-    }
-}
+
     /*Navigation animation*/
     .navigation-list a:before{
         position: absolute;
@@ -244,6 +254,7 @@
         background: #702283;
         content: "";
         opacity: 1;
+        -webkit-transition: all 0.3s;
         transition: all 0.3s;
     }
 
@@ -256,6 +267,7 @@
         background: #702283;
         content: "";
         opacity: 1;
+        -webkit-transition: all 0.3s;
         transition: all 0.3s;
     }
 
@@ -282,6 +294,7 @@
         background: #702283;
         content: "";
         opacity: 1;
+        -webkit-transition: all 0.3s;
         transition: all 0.3s;
     }
     .link__animated:hover:before{
@@ -294,79 +307,87 @@
         height: auto;
         margin-right: 40px;
         border-radius: 50%;
-        -ms-grid-column-align: end;
-            justify-self: end;
     }
     .profile{
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
         max-width: 80%;
         margin: 2rem auto;
     }
-    .berlin-illustration{
-        display: flex;
-        max-width: 110%;
-        margin: auto;
+    .required-input, .error-message {
+        font-size: 80%;
+        font-style: italic;
+    }
+    .required-input {
+        margin-top: 0.5rem;
     }
     /*animations defined*/
     @-webkit-keyframes color-change{
         0%{
             fill: #edc655;
-            transform: translate(0px, 0px);
+            -webkit-transform: translate(0px, 0px);
+                    transform: translate(0px, 0px);
         }
         50%{
             fill: #fcffad;
         }
         100%{
             fill: #f76414;
-            transform: translate(250px, 480px);
+            -webkit-transform: translate(250px, 480px);
+                    transform: translate(250px, 480px);
         }
     }
     @keyframes color-change{
         0%{
             fill: #edc655;
-            transform: translate(0px, 0px);
+            -webkit-transform: translate(0px, 0px);
+                    transform: translate(0px, 0px);
         }
         50%{
             fill: #fcffad;
         }
         100%{
             fill: #f76414;
-            transform: translate(250px, 480px);
+            -webkit-transform: translate(250px, 480px);
+                    transform: translate(250px, 480px);
         }
     }
     @-webkit-keyframes cloud-move{
         from{
-            transform: translate(0, 50px);
+            -webkit-transform: translate(0, 50px);
+                    transform: translate(0, 50px);
         }
         to{
-            transform: translate(200px, 50px);
+            -webkit-transform: translate(200px, 50px);
+                    transform: translate(200px, 50px);
         }
     }
     @keyframes cloud-move{
         from{
-            transform: translate(0, 50px);
+            -webkit-transform: translate(0, 50px);
+                    transform: translate(0, 50px);
         }
         to{
-            transform: translate(200px, 50px);
+            -webkit-transform: translate(200px, 50px);
+                    transform: translate(200px, 50px);
         }
     }
     @-webkit-keyframes cloud-move-reverse{
         from{
-            transform: translate(446px, 48px);
+            -webkit-transform: translate(446px, 48px);
+                    transform: translate(446px, 48px);
         }
         to{
-            transform: translate(100px, 48px);
+            -webkit-transform: translate(100px, 48px);
+                    transform: translate(100px, 48px);
         }
     }
     @keyframes cloud-move-reverse{
         from{
-            transform: translate(446px, 48px);
+            -webkit-transform: translate(446px, 48px);
+                    transform: translate(446px, 48px);
         }
         to{
-            transform: translate(100px, 48px);
+            -webkit-transform: translate(100px, 48px);
+                    transform: translate(100px, 48px);
         }
     }
     .sun{
@@ -384,29 +405,32 @@
     }
 
     .description{
-        display: -ms-grid;
-        display: grid;
-        max-width: 70%;
-        margin: 2rem auto;
-        text-align: center;
+    max-width: 70%;
+    margin: 2rem auto;
+    text-align: center;
     }
 
     .skills{
-        margin: 0px 20px;
+        margin: collapse 20px;
         border-collapse: separate;
         border-spacing: 5px;
         text-align: left;
     }
     .page-footer{
         clear: both;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         text-align: center;
         font-size: 16px;
         margin: 20px;
     }
-    .contact-section, .projects{
-        margin: 2rem;
+    .contact-section{
+        margin: 20px;
     }
     .contact__inner{
         margin-bottom: 20px;
@@ -435,6 +459,7 @@
             -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
             grid-template-columns: 1fr 1fr 1fr;
             grid-gap: 20px;
+            padding: 10px;
         }
         .grid__item{
             border: 1px solid #702283;
