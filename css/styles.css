@@ -367,6 +367,10 @@
     }
     /*fallback grid end*/
 
+    .gid_item p {
+        margin-bottom: 1rem;
+    }
+    
     @supports(display: grid){
         .grid{
             display: grid;
