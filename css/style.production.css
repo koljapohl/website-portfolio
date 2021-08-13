@@ -442,10 +442,10 @@
     }
     /*fallback grid end*/
 
-    .grid_item p {
+    .link_container {
         margin-bottom: 1rem;
     }
-    
+
     @supports(display: grid){
         .grid{
             display: -ms-grid;
