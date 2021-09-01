@@ -443,7 +443,7 @@
     /*fallback grid end*/
 
     .link_container {
-        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     @supports(display: grid){
