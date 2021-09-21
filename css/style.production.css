@@ -307,24 +307,40 @@
     .modal-body {
         display: none;
         position: fixed;
-        z-index: 10;
+        z-index: 2;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: gray;
-        opacity: 0.7;
+        background-color: rgba(128, 128, 128, 0.8);
         justify-content: center;
         align-content: center;
         
     }
     .modal-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
         align-items: center;
-        height: 90vh;
+        width: 80vw;
+        padding: 2rem;
         background-color: #fff;
-        padding: 10px;
+        z-index: 4;
+    }
+    .row-close {
+        justify-self: end;
+        font-size: 2rem;
+        cursor:pointer;
+        color: #702283;
+    }
+    .row-close:hover, .row-close:active {
+        color: #c7d540;
+    }
+    .row-images{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .modal-img {
+        height: 80vh;
     }
     /*Project-links animation end*/
     .profile__portrait{
