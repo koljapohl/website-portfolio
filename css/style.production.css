@@ -5,13 +5,6 @@
 * Browsers: > .5%,last 2 versions,Safari 13,not dead
 */
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: > .5%,last 2 versions,Safari 13,not dead
-*/
-
     /*
     Colors used
 
@@ -293,6 +286,45 @@
     }
     .link__animated:hover:before{
         width: 1px;
+    }
+    button#weChat {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        color: var(--primary-color);
+        opacity: 1;
+    }
+    #weChat:hover, #weChat:focus {
+        color: var(--primary-color);
+        text-decoration: none;
+        opacity: 1;
+    }
+    #weChat:active {
+        color: #c7d540;
+    }
+    
+    /*modal section*/
+    .modal-body {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: gray;
+        opacity: 0.7;
+        justify-content: center;
+        align-content: center;
+        
+    }
+    .modal-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        height: 90vh;
+        background-color: #fff;
+        padding: 10px;
     }
     /*Project-links animation end*/
     .profile__portrait{
