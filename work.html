@@ -14,7 +14,9 @@
     <header class="page-header">
         <!--place Logo here -->
         <div class="page-header__item logo-container">
-            <img src="img/logo.png" alt="logo" class="logo">
+            <a href="index.html" role="button" aria-hidden="true">
+                <img src="img/logo.png" alt="logo" class="logo">
+            </a>
         </div>
         <!--navigation bar-->
         <nav class="main-navigation page-header__item">
@@ -48,7 +50,7 @@
                         Meet App was created with Create React App and has a 100% testing coverage with unit, integration, acceptance, and end-to-end tests.<br>
                         Jest is used as a testing framework with Enzyme, Cucumber, and Puppeteer integrations.<br>
                         Serverless functions hosted on AWS Lambda are used for authenticating the users Google account.<br>
-                        <br><br>
+                        <br>
                         In building this app I learned about serverless functions, OAuth, CRA, TDD and BDD, Gherkin, PWAs, OOP class inheritance, and performance monitoring.
                        </p>
                     <div class="link_container"><a href="https://github.com/koljapohl/meet" class="project-link link__animated" target="_blank">See project on GitHub</a></div>
@@ -64,37 +66,61 @@
                         <br>
                         In building this app I learned about native mobile application development, RTAs, blob-storage and Emulators/Simulators.
                        </p>
-                    <a href="https://github.com/koljapohl/chatApp" class="project-link link__animated" target="_blank">See project on GitHub.</a>
+                    <div class="link_container"><a href="https://github.com/koljapohl/chatApp" class="project-link link__animated" target="_blank">See project on GitHub.</a></div>
+                    <div class="link_container"><button id="weChat" role="link" onclick='showScreenshot()' class="project-link link__animated">See Screenshots</button></div>
                 </div>
                 <div class="grid__item">
-                    <h2>Node.js pdf generation</h2>
+                    <h2>Pokédex App</h2>
                     <p>
-                        Within this project, I created a service that generates pdf out of webpages with the help of a node.js server.
+                        As this app being my first one to having developed, it simply loads data from an external API and displays its details within a modal on demand.<br>
+                        <br>
+                        In building this app I learned about HTML, CSS and JavaScript in general as well as jQuery and Bootstrap to simplify and speed up the development process.
                        </p>
-                    <a href="#" class="project-link link__animated">See project on GitHub.</a>
+                       <div class="link_container"><a href="https://github.com/koljapohl/simple-js-app" class="project-link link__animated" target="_blank">See project on GitHub</a></div>
+                       <div class="link_container"><a href="https://koljapohl.github.io/simple-js-app/" class="project-link link__animated" target="_blank">See live app</a></div>
                 </div>
                 <div class="grid__item">
-                    <h2>Styleguide for portfolio page</h2>
+                    <h2>myFlix - API</h2>
                     <p>
-                        Here you can find the styleguide I've created for this portfolio page.
-                        It was created with the livingstyleguide gem and grunt.
+                        This project's objective was to create a REST API for an application that interacts with a database that stores data about different movies.<br>
+                        <br>
+                        In this project, I had the chance to build an entire API from the scratch and therefore, started looking at the backend side of web programming. The use of Node.js was essential.
+                        The concepts of modules, packages (and their managers, respectively) as well as deploying web services to be accessed via the internet have been targeted throughout the project and therefore, have gotten into deeper understanding.<br>
+                        <br>
+                        In building this API I learned about authentication / authorization (basic HTTP + jwt), password hashing, CSP and overall about the REST API architecture.<br>
+                        Additionally I got to know MongoDB and Express.
                        </p>
-                    <a href="#" class="project-link link__animated">See project on GitHub.</a>
+                       <div class="link_container"><a href="https://github.com/koljapohl/movie_api" class="project-link link__animated" target="_blank">See project on GitHub</a></div>
+                       <div class="link_container"><a href="https://myflix-kp.herokuapp.com/documentation.html" class="project-link link__animated" target="_blank">See API Documentation</a></div>
                 </div>
                 <div class="grid__item">
-                    <h2>Medium Blog</h2>
+                    <h2>myFlix - Client</h2>
                     <p>
-                        I am also writing on medium.com about React.js.
+                        Within this project I developed the corresponding client app for the myFlix API.
+                        The app displays information about movies, that are stored within a database to registered (and logged in) users.<br>
+                        Furthermore users are able to save movies to a list of favorite movies as well as to update their credentials and to deregister.<br>
+                        <br>
+                        This app was build using Angular which has been the third frontend framework I got to work with and furthermore has been the most complex and opinionated one.<br>
+                        I learned about Angular, Angular Material, TypeScript, Rxjs, JSDoc, TypeDoc and Scss.
                        </p>
-                    <a href="#" class="project-link link__animated">See project on GitHub.</a>
+                       <div class="link_container"><a href="https://github.com/koljapohl/myFlix-Angular-client" class="project-link link__animated" target="_blank">See project on GitHub</a></div>
+                       <div class="link_container"><a href="https://koljapohl.github.io/myFlix-Angular-client/" class="project-link link__animated" target="_blank">See live app</a></div>
                 </div>
                 <div class="grid__item">
                     <h2>Your project?</h2>
                     <p>
-                        I can help in realizing front-end and back-end projects with the following technologies: React.js, JavaScript,
-                        Java, JavaFX, HTML and CSS. I am also happy to learn other technologies if needed.
-                       </p>
-                    <a href="contact.html" class="project-link link__animated">Contact me</a>
+                        I can help in realizing front-end and back-end projects with the following technologies: JavaScript, HTML, CSS, React.js, Vue.js, Angular. I am also happy to learn other technologies if needed.
+                    </p>
+                    <div class="link_container"><a href="contact.html" class="project-link link__animated">Contact me</a></div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-container">
+                    <div class="row row-close"><span class="close" onclick="closeModal()">&times;</span></div>
+                    <div class="row row-images">
+                    <img src="img/WeChat_start.png" alt="weChat start screen" class="modal-img">
+                    <img src="img/WeChat_chat.png" alt="weChat chat screen" class="modal-img">
+                </div>
                 </div>
             </div>
 
@@ -117,7 +143,8 @@
             </a>
         </div>
     </footer>
+    <script src='js/screenshot.js'></script>
     <!--embed tota11y Plug-In-->
-    <script src="js/tota11y.min.js"></script>
+    <!-- <script src="js/tota11y.min.js"></script> -->
 </body>
 </html>
