@@ -316,7 +316,6 @@
         justify-content: center;
         align-content: center;
         overflow: auto;
-        
     }
     .modal-container {
         display: grid;
@@ -354,7 +353,7 @@
         margin-right: 40px;
         border-radius: 50%;
         -ms-grid-column-align: end;
-            justify-self: end;
+        justify-self: end;
     }
     .profile{
         display: -ms-grid;
