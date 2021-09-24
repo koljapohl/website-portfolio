@@ -157,7 +157,9 @@
         cursor: pointer;
         opacity: 0.8;
     }
-
+    .content-wrapper {
+        margin: 2rem 5vw;
+    }
     /*table header in bold*/
     thead{
         font-weight: 700;
@@ -184,6 +186,10 @@
     }
     .link__soc-med{
         text-decoration: none;
+    }
+    .img__soc-med {
+        height: 30px;
+        width: 30px;
     }
     .page-header{
         display: flex;
@@ -361,7 +367,7 @@
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         max-width: 80%;
-        margin: 2rem auto;
+        margin: 100px auto;
     }
     .required-input, .error-message {
         font-size: 80%;
@@ -452,8 +458,7 @@
         display: -ms-grid;
         display: grid;
         max-width: 70%;
-        margin: 2rem auto;
-        text-align: center;
+        text-align: justify;
     }
 
     .skills{
@@ -468,10 +473,10 @@
         flex-direction: column;
         text-align: center;
         font-size: 16px;
-        margin: 20px;
+        margin: 8vh auto;
     }
-    .contact-section, .projects{
-        margin: 2rem;
+    .page-footer p {
+        margin-bottom: 1rem;
     }
     .contact__inner{
         margin-bottom: 20px;
